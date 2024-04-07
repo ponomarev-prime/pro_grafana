@@ -22,5 +22,10 @@ services:
       - prometheus
     environment:
       - GF_AUTH_ANONYMOUS_ENABLED=true
+      - GF_USERS_DEFAULT_THEME=light
+      - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_USERS_HOME_URL=http://localhost:3000
+      - GF_USERS_SECURITY_ADMIN_PASSWORD=admin
+      - GF_SECURITY_ADMIN_USER=admin
 volumes:
   prometheus_data: {}
